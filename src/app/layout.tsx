@@ -1,6 +1,6 @@
-import '@/styles/globals.css';
-
+import { cn } from '@lib/utilities';
 import { Inter } from 'next/font/google';
+import '@styles/globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'theCSSguru',
-  description: 'Frontend Software Engineer',
+  title: 'theCSSguru | Senior Frontend Software Engineer',
+  description: 'theCSSguru | Senior Frontend Software Engineer',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 
@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>{children}</body>
+      <body className={cn('bg-black font-sans', inter.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
