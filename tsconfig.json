@@ -26,8 +26,8 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@styles/*": ["./src/styles/*"],
-      "@lib/*": ["./src/lib/*"]
+      "@/*": ["./src/@/*"],
+      "@/styles/*": ["./src/styles/*"]
     }
   },
   "include": [
