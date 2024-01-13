@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'theCSSguru | Senior Frontend Software Engineer',
-  description: 'theCSSguru | Senior Frontend Software Engineer',
+  title: 'theCSSguru | Senior Front End Developer',
+  description: 'theCSSguru | Senior Front End Developer',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 
