@@ -12,6 +12,10 @@ export default {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
+      backgroundImage: {
+        'brand-stripes':
+          'repeating-linear-gradient(135deg, #ffffff05 0, #ffffff05 10px, transparent 10px, transparent 20px)',
+      },
     },
   },
   plugins: [],

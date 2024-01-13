@@ -1,12 +1,41 @@
+import { Header } from '@/components/Layout/Header';
+import { Card } from '@/components/Card/Card';
+import { Footer } from '@/components/Layout/Footer';
+
+/*
+ * Page
+ */
 export default function HomePage() {
   return (
-    <main className="from-brand-primary/30 flex min-h-screen flex-col items-center justify-center bg-gradient-to-b to-black text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          theCSSguru
-        </h1>
-        <div>Bruh</div>
-      </div>
-    </main>
+    <div className="grid grid-rows-[auto_1fr_auto] gap-4 p-4 md:min-h-screen">
+      <Header />
+      <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <Card className="bg-gradient-to-tl from-black/10 md:col-span-1">
+          lorem1
+        </Card>
+        <Card className="bg-gradient-to-tl from-brand-primary/15 lg:col-span-2">
+          lorem2
+        </Card>
+        <Card className="bg-gradient-to-tl from-white/20 md:col-start-2 md:col-end-3 md:row-span-2 lg:col-start-3 lg:col-end-4 xl:col-start-auto xl:col-end-auto">
+          lorem3
+        </Card>
+        <Card className="bg-gradient-to-tl from-brand-secondary/15 md:row-start-2 md:row-end-4 lg:col-span-2 lg:row-end-3 xl:col-span-3">
+          lorem4
+        </Card>
+        <Card className="bg-gradient-to-tl from-white/5 md:col-span-2 lg:col-span-1">
+          lorem5
+        </Card>
+        <Card className="bg-gradient-to-tl from-white/5 md:col-span-2 lg:col-span-1">
+          lorem6
+        </Card>
+        <Card className="bg-gradient-to-tl from-white/5 md:col-span-2 xl:col-span-1">
+          lorem7
+        </Card>
+        <Card className="bg-gradient-to-tl from-white/5 md:col-span-2 lg:col-span-1">
+          lorem8
+        </Card>
+      </main>
+      <Footer />
+    </div>
   );
 }
