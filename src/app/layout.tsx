@@ -10,8 +10,8 @@ const inter = Inter({
 
 // Meta Data
 export const metadata = {
-  title: 'theCSSguru | Senior Front End Developer',
-  description: 'theCSSguru | Senior Front End Developer',
+  title: 'theCSSguru | Senior Software Engineer',
+  description: 'theCSSguru | Senior Software Engineer',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 

@@ -71,7 +71,7 @@ export const Card = ({
             transform: 'translateZ(75px)',
             transformStyle: 'preserve-3d',
           }}
-          className={cn(childClassName)}
+          className={cn('h-full', childClassName)}
         >
           {children}
         </div>
