@@ -1,8 +1,9 @@
 import { Header } from '@/components/Layout/Header';
 import { Card } from '@/components/Card/Card';
+import { Profile } from '@/components/Layout/Sections/Profile';
+import { Experience } from '@/components/Layout/Sections/Experience';
 import { Footer } from '@/components/Layout/Footer';
-import { Experience } from '@/components/Layout/Experience';
-import Image from 'next/image';
+import { Intro } from '@/components/Layout/Sections/Intro';
 
 /*
  * Page
@@ -13,28 +14,10 @@ export default function HomePage() {
       <Header />
       <main className="grid grid-rows-[auto_1fr_auto] gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <Card className="bg-gradient-to-b from-white/10 md:col-span-1">
-          <Image
-            src="/me.jpg"
-            alt="Chris Johnson | theCSSguru"
-            width={300}
-            height={300}
-            className="aspect-square h-auto w-full rounded-full border-8 border-black/50 shadow-xl outline-double outline-white/5"
-          />
+          <Profile />
         </Card>
         <Card className="flex items-center justify-center bg-gradient-to-b from-brand-primary/20 lg:col-span-2">
-          <h1 className="flex flex-col items-center justify-between gap-3 text-center drop-shadow-lg">
-            <div className="text-base font-extralight tracking-wider opacity-75">
-              I&apos;m Chris Johnson
-            </div>
-            <div className="text-4xl font-bold md:text-5xl">
-              <span className="text-brand-primary">Senior </span>
-              <span>Front End </span>
-              <span className="text-brand-secondary">Developer</span>
-            </div>
-            <div className="text-base font-extralight tracking-wider opacity-75">
-              Passion for Creating and Maintaining Beautiful Code
-            </div>
-          </h1>
+          <Intro />
         </Card>
         <Card
           tiltSoft
