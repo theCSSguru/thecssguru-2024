@@ -1,0 +1,58 @@
+export const experience = [
+  {
+    position: 'Senior Software Engineer II',
+    company: 'Humana',
+    location: 'Remote',
+    time: 'Full Time',
+    duration: 'Jun 2022 - Present',
+  },
+  {
+    position: 'Senior Software Engineer II',
+    company: 'Author by Humana',
+    location: 'Remote',
+    time: 'Full Time',
+    duration: 'Jun 2021 - Jun 2022',
+  },
+  {
+    position: 'Lead Front End Developer',
+    company: 'InterCoastal Net Designs',
+    location: 'Remote',
+    time: 'Full Time',
+    duration: 'Dec 2017 - Jun 2021',
+  },
+  {
+    position: 'UX Developer',
+    company: 'Navient',
+    location: 'Fishers, IN',
+    time: 'Full Time',
+    duration: 'Jul 2017 - Nov 2017',
+  },
+  {
+    position: 'Front End Developer',
+    company: 'InterCoastal Net Designs',
+    location: 'Remote',
+    time: 'Full Time',
+    duration: 'Nov 2015 - Jul 2017',
+  },
+  {
+    position: 'Web Developer',
+    company: 'Orbis Education',
+    location: 'Indianapolis, IN',
+    time: 'Full Time',
+    duration: 'Aug 2014 - Aug 2015',
+  },
+  {
+    position: 'Front End Developer',
+    company: 'InterCoastal Net Designs',
+    location: 'Remote',
+    time: 'Full Time',
+    duration: 'Jul 2008 - Jun 2014',
+  },
+  {
+    position: 'Creative Director',
+    company: 'Marian Records',
+    location: 'Nashville, TN',
+    time: 'Full Time',
+    duration: 'May 2007 - Jan 2008',
+  },
+];
