@@ -7,7 +7,7 @@ import { FaLaptopCode } from 'react-icons/fa6';
  */
 export const Skills = () => {
   return (
-    <Card className="bg-gradient-to-b from-brand-secondary/30 lg:col-span-2 xl:col-span-2">
+    <Card className="bg-gradient-to-b from-brand-secondary/30 lg:col-span-2 xl:col-span-2 xl:col-start-5">
       <h2 className="mb-2 flex items-center gap-3 text-2xl font-bold tracking-wide drop-shadow-lg">
         <FaLaptopCode />
         Skills

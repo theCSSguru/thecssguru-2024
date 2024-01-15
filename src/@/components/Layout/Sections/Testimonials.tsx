@@ -14,7 +14,7 @@ export const Testimonials = () => {
         <Card
           key={item.name}
           className={cn('bg-gradient-to-b from-black/50 p-4', {
-            'xl:col-span-2': index === 0 || index === 1,
+            'xl:col-span-2 xl:row-start-2': index === 0 || index === 1,
             'lg:col-span-2 xl:col-span-3': index === 2,
             'xl:col-span-3': index === 3,
           })}
