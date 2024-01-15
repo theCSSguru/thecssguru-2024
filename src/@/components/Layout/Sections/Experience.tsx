@@ -1,13 +1,16 @@
-import React from 'react';
 import { experience } from '@/lib/experience';
 import { FaComputer } from 'react-icons/fa6';
+import { Card } from '@/components/Card/Card';
 
 /*
  * Experience
  */
 export const Experience = () => {
   return (
-    <React.Fragment>
+    <Card
+      tiltSoft
+      className="bg-gradient-to-b from-white/20 sm:col-start-2 sm:col-end-3 sm:row-span-2 lg:col-start-3 lg:col-end-4 xl:col-start-auto xl:col-end-auto"
+    >
       <h2 className="mb-2 flex items-center gap-3 text-2xl font-bold tracking-wide drop-shadow-lg">
         <FaComputer />
         Experience
@@ -42,6 +45,6 @@ export const Experience = () => {
           </div>
         ))}
       </div>
-    </React.Fragment>
+    </Card>
   );
 };

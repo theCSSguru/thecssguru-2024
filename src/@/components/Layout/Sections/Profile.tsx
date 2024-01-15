@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card } from '@/components/Card/Card';
 import Image from 'next/image';
 
 /*
@@ -6,7 +7,7 @@ import Image from 'next/image';
  */
 export const Profile = () => {
   return (
-    <React.Fragment>
+    <Card className="bg-gradient-to-b from-white/10 sm:col-span-1">
       <Image
         src="/me.jpg"
         alt="Chris Johnson | theCSSguru"
@@ -14,6 +15,6 @@ export const Profile = () => {
         height={300}
         className="aspect-square h-auto w-full rounded-full border-8 border-black/50 shadow-xl outline-double outline-white/5"
       />
-    </React.Fragment>
+    </Card>
   );
 };

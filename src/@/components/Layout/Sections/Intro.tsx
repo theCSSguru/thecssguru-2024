@@ -1,12 +1,12 @@
-import React from 'react';
+import { Card } from '@/components/Card/Card';
 
 /*
  * Intro
  */
 export const Intro = () => {
   return (
-    <React.Fragment>
-      <div className="flex h-full flex-col justify-between text-center drop-shadow-lg">
+    <Card className="flex items-center justify-center bg-gradient-to-b from-brand-primary/20 lg:col-span-2">
+      <div className="flex h-full flex-col justify-between gap-4 text-center drop-shadow-lg">
         <div className="flex h-full items-center">
           <h1 className="flex h-full w-full flex-col items-center justify-center gap-1">
             <span className="text-base font-extralight tracking-wider opacity-75">
@@ -22,12 +22,12 @@ export const Intro = () => {
             </span>
           </h1>
         </div>
-        <div className="rounded-full bg-black/15 px-6 py-4 text-base tracking-wide opacity-90">
+        <div className="rounded-xl bg-black/15 px-6 py-4 text-base tracking-wide opacity-90">
           Front End Engineer with 15 years of experience working with various
           teams and designers, utilizing React and Next JS to create meaningful
           user experiences.
         </div>
       </div>
-    </React.Fragment>
+    </Card>
   );
 };
