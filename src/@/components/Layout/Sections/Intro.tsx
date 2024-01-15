@@ -10,7 +10,7 @@ export const Intro = () => {
       <div className="flex h-full flex-col justify-between gap-4 xl:grid xl:grid-cols-[1fr_auto_auto_1fr] xl:items-center">
         <div className="mx-auto flex max-w-52 xl:col-start-2 xl:mr-6">
           <Image
-            src="/me.jpg"
+            src="/me.png"
             alt="Chris Johnson | theCSSguru"
             width={300}
             height={300}
