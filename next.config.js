@@ -5,6 +5,6 @@
 await import('./src/server/env.js');
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = { distDir: 'build', output: 'export' };
 
 export default config;
