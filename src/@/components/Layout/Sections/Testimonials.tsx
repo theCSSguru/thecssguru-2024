@@ -13,9 +13,10 @@ export const Testimonials = () => {
       {testimonials.map((item, index) => (
         <Card
           key={item.name}
-          className={cn('bg-gradient-to-b from-black/50 p-4 sm:col-span-2', {
-            'lg:col-span-1': index !== 2,
-            'xl:col-span-1': index === 2,
+          className={cn('bg-gradient-to-b from-black/50 p-4', {
+            'xl:col-span-2': index === 0 || index === 1,
+            'lg:col-span-2 xl:col-span-3': index === 2,
+            'xl:col-span-3': index === 3,
           })}
           childClassName="drop-shadow-lg"
         >
@@ -27,7 +28,7 @@ export const Testimonials = () => {
             <div className="grow font-extralight italic tracking-wide">
               &quot;{item.testimonial}&quot;
             </div>
-            <div className="flex items-center justify-end gap-1 text-xs">
+            <div className="flex flex-wrap items-center justify-end gap-1 text-xs">
               <div className="rounded-full bg-brand-primary/30 px-2 py-0.5">
                 {item.name}
               </div>

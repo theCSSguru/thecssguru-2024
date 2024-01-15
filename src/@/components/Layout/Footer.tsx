@@ -7,11 +7,9 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <Card className="bg-gradient-to-tl from-black/10" tilt={false}>
-        <div className="text-center text-sm opacity-25 md:text-base">
-          &copy; Copyright {currentYear} of theCSSguru
-        </div>
-      </Card>
+      <div className="text-center text-xs opacity-25">
+        &copy; Copyright {currentYear} of theCSSguru
+      </div>
     </footer>
   );
 };

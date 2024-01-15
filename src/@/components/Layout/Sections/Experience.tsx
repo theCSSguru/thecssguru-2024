@@ -9,7 +9,7 @@ export const Experience = () => {
   return (
     <Card
       tiltSoft
-      className="bg-gradient-to-b from-white/20 sm:col-start-2 sm:col-end-3 sm:row-span-2 lg:col-start-3 lg:col-end-4 xl:col-start-auto xl:col-end-auto"
+      className="bg-gradient-to-b from-white/20 p-6 pt-4 sm:row-start-1 sm:row-end-3 lg:row-end-4 xl:col-span-2"
     >
       <h2 className="mb-2 flex items-center gap-3 text-2xl font-bold tracking-wide drop-shadow-lg">
         <FaComputer />
@@ -25,15 +25,13 @@ export const Experience = () => {
               {item.position}
             </div>
             <div className="flex flex-col gap-1 text-xs">
-              <div className="flex gap-1">
+              <div className="flex flex-wrap gap-1">
                 <div className="rounded-full bg-brand-primary/30 px-2 py-0.5">
                   {item.company}
                 </div>
                 <div className="rounded-full bg-brand-secondary/50 px-2 py-0.5">
                   {item.location}
                 </div>
-              </div>
-              <div className="flex gap-1">
                 <div className="rounded-full bg-black/10 px-2 py-0.5">
                   {item.time}
                 </div>

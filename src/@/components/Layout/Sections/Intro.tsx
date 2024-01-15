@@ -1,28 +1,40 @@
 import { Card } from '@/components/Card/Card';
+import Image from 'next/image';
 
 /*
  * Intro
  */
 export const Intro = () => {
   return (
-    <Card className="flex items-center justify-center bg-gradient-to-b from-brand-primary/20 lg:col-span-2">
-      <div className="flex h-full flex-col justify-between gap-4 text-center drop-shadow-lg">
-        <div className="flex h-full items-center">
-          <h1 className="flex h-full w-full flex-col items-center justify-center gap-1">
-            <span className="text-base font-extralight tracking-wider opacity-75">
-              Chris Johnson
-            </span>
-            <span className="text-4xl font-bold md:text-5xl">
-              <span className="text-brand-primary">Senior </span>
-              <span>Software </span>
-              <span className="text-brand-secondary">Engineer</span>
-            </span>
-            <span className="text-base font-extralight tracking-wider opacity-75">
-              Passion for Creating and Maintaining Beautiful Code
-            </span>
-          </h1>
+    <Card className="bg-gradient-to-b from-brand-primary/20 p-6 sm:row-end-2 lg:col-span-2 xl:col-span-6">
+      <div className="flex h-full flex-col justify-between gap-4 xl:grid xl:grid-cols-[1fr_auto_auto_1fr] xl:items-center">
+        <div className="mx-auto flex max-w-52 xl:col-start-2 xl:mr-6">
+          <Image
+            src="/me.jpg"
+            alt="Chris Johnson | theCSSguru"
+            width={300}
+            height={300}
+            className="aspect-square h-auto w-full rounded-full border-8 border-black/50 shadow-xl outline-double outline-white/5"
+          />
         </div>
-        <div className="rounded-xl bg-black/15 px-6 py-4 text-base tracking-wide opacity-90">
+        <div className="flex flex-col justify-between gap-4 text-center drop-shadow-lg">
+          <div className="flex items-center">
+            <h1 className="flex w-full flex-col items-center justify-center gap-1">
+              <span className="text-base font-extralight tracking-wider opacity-75">
+                Chris Johnson
+              </span>
+              <span className="text-3xl font-bold sm:text-4xl lg:text-5xl">
+                <span className="text-brand-primary">Senior </span>
+                <span>Software </span>
+                <span className="text-brand-secondary">Engineer</span>
+              </span>
+              <span className="text-balance text-base font-extralight tracking-wider opacity-75">
+                Passion for Creating and Maintaining Beautiful Code
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div className="text-balance rounded-xl bg-black/15 px-6 py-4 text-center text-base tracking-wide opacity-90 xl:col-span-4">
           Front End Engineer with 15 years of experience working with various
           teams and designers, utilizing React and Next JS to create meaningful
           user experiences.
