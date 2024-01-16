@@ -8,7 +8,7 @@ import { Card } from '@/components/Card/Card';
 export const Experience = () => {
   return (
     <Card
-      tiltSoft
+      tilt={false}
       className="bg-gradient-to-b from-white/20 p-6 pt-4 sm:row-start-1 sm:row-end-3 lg:row-end-4 xl:col-span-2"
     >
       <h2 className="mb-2 flex items-center gap-3 text-2xl font-bold tracking-wide drop-shadow-lg">
@@ -18,7 +18,7 @@ export const Experience = () => {
       <div className="flex flex-col gap-2">
         {experience.map((item) => (
           <div
-            key={item.time}
+            key={item.duration}
             className="rounded-md border border-transparent bg-white/5 p-4 shadow-lg transition-all duration-300 hover:border-brand-primary/30"
           >
             <div className="mb-2 text-lg font-extralight leading-none tracking-wide">

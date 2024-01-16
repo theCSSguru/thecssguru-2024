@@ -6,7 +6,7 @@ import { Testimonials } from '@/components/Layout/Sections/Testimonials';
 import { Footer } from '@/components/Layout/Footer';
 
 /*
- * Page
+ * HomePage
  */
 export default function HomePage() {
   return (
