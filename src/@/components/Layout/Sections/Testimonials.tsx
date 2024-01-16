@@ -18,9 +18,8 @@ export const Testimonials = () => {
             'lg:col-span-2 xl:col-span-3': index === 2,
             'xl:col-span-3': index === 3,
           })}
-          childClassName="drop-shadow-lg"
         >
-          <div className="flex h-full flex-col gap-4 rounded-lg border border-transparent bg-black/20 p-6 transition-all duration-300 hover:bg-black/50">
+          <div className="flex h-full flex-col gap-4 rounded-lg border border-transparent bg-black/20 p-6 drop-shadow-lg transition-all duration-300 hover:bg-black/50">
             <div className="flex items-center justify-between gap-2 text-xl font-semibold tracking-wide text-brand-secondary">
               {item.title}
               <FaComment />

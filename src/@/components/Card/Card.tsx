@@ -8,7 +8,6 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 export const Card = ({
   children,
   className,
-  childClassName,
   tilt = true,
   tiltSoft,
 }: CardProps) => {
@@ -71,24 +70,19 @@ export const Card = ({
             transform: 'translateZ(75px)',
             transformStyle: 'preserve-3d',
           }}
-          className={cn('h-full', childClassName)}
+          className="h-full"
         >
           {children}
         </div>
       </motion.div>
     );
   }
-  return (
-    <div className={cn(cardDefaultStyles, className)}>
-      <div className={cn(childClassName)}>{children}</div>
-    </div>
-  );
+  return <div className={cn(cardDefaultStyles, className)}>{children}</div>;
 };
 
 type CardProps = {
   children: React.ReactNode;
   className?: string;
-  childClassName?: string;
   tilt?: boolean;
   tiltSoft?: boolean;
 };
