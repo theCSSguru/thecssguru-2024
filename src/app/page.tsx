@@ -10,7 +10,7 @@ import { Footer } from '@/components/Layout/Footer';
  */
 export default function HomePage() {
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] gap-4 p-4 sm:min-h-screen">
+    <div className="mx-auto grid max-w-screen-2xl grid-rows-[auto_1fr_auto] gap-4 p-4">
       <Header />
       <main className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-8">
         <Intro />

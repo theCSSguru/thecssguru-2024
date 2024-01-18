@@ -24,15 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={cn(
-          'bg-black bg-gradient-to-br from-brand-primary/30 to-black font-sans text-white',
-          inter.variable,
-        )}
-      >
-        <div className="min-h-screen bg-brand-stripes">{children}</div>
-      </body>
+    <html
+      lang="en"
+      className={cn(
+        'h-full min-h-full bg-black bg-gradient-to-br from-brand-primary/30 to-black font-sans text-white',
+        inter.variable,
+      )}
+    >
+      <body className="h-full min-h-full bg-brand-stripes">{children}</body>
     </html>
   );
 }
