@@ -25,8 +25,8 @@ export const Intro = () => {
               </span>
               <span className="text-3xl font-bold sm:text-4xl lg:text-5xl">
                 <span className="text-brand-primary">Senior </span>
-                <span>Software </span>
-                <span className="text-brand-secondary">Engineer</span>
+                <span>Front End </span>
+                <span className="text-brand-secondary">Developer</span>
               </span>
               <span className="text-balance text-base font-extralight tracking-wider opacity-75">
                 Passion for Creating and Maintaining Beautiful Code
@@ -35,7 +35,7 @@ export const Intro = () => {
           </div>
         </div>
         <div className="text-balance rounded-xl bg-black/15 px-6 py-4 text-center text-base tracking-wide opacity-90 xl:col-span-4">
-          Front End Engineer with 15 years of experience working with various
+          Front End Developer with 15 years of experience working with various
           teams and designers, utilizing React and Next JS to create meaningful
           user experiences.
         </div>

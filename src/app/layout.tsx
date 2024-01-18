@@ -10,8 +10,8 @@ const inter = Inter({
 
 // Meta Data
 export const metadata = {
-  title: 'theCSSguru | Senior Software Engineer',
-  description: 'theCSSguru | Senior Software Engineer',
+  title: 'theCSSguru | Senior Front End Developer',
+  description: 'theCSSguru | Senior Front End Developer',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({
           inter.variable,
         )}
       >
-        <div className="bg-brand-stripes min-h-screen">{children}</div>
+        <div className="min-h-screen bg-brand-stripes">{children}</div>
       </body>
     </html>
   );
