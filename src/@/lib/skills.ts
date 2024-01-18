@@ -11,6 +11,7 @@ export const skills = [
   'JSON',
   'TanStack Query',
   'GraphQL',
+  'Material UI',
   'Radix UI',
   'Shadcn UI',
   'Jest',
