@@ -1,14 +1,80 @@
+import React from 'react';
 import { Header } from '@/components/Layout/Header';
-// import { Footer } from '@/components/Layout/Footer';
+import { Home } from '@/components/Layout/Sections/Home';
+import { About } from '@/components/Layout/Sections/About';
+import { Footer } from '@/components/Layout/Footer';
 
 /*
  * HomePage
  */
 export default function HomePage() {
   return (
-    <div id="home">
+    <React.Fragment>
       <Header />
-      {/* <Footer /> */}
-    </div>
+      <Home />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <About />
+      <Footer />
+    </React.Fragment>
   );
 }

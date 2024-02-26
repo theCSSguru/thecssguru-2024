@@ -5,7 +5,7 @@ import { Navigation } from './Navigation';
  */
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between py-7">
+    <header className="fixed z-50 mx-auto flex w-full max-w-screen-2xl items-center justify-between py-7">
       <div className="text-lg font-bold md:text-3xl">
         <a href="#home">
           <span className="mr-2 text-brand-primary">{`{`}</span>
