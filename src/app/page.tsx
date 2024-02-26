@@ -1,24 +1,14 @@
 import { Header } from '@/components/Layout/Header';
-import { Intro } from '@/components/Layout/Sections/Intro';
-import { Skills } from '@/components/Layout/Sections/Skills';
-import { Experience } from '@/components/Layout/Sections/Experience';
-import { Testimonials } from '@/components/Layout/Sections/Testimonials';
-import { Footer } from '@/components/Layout/Footer';
+// import { Footer } from '@/components/Layout/Footer';
 
 /*
  * HomePage
  */
 export default function HomePage() {
   return (
-    <div className="mx-auto grid max-w-screen-2xl grid-rows-[auto_1fr_auto] gap-4 p-4">
+    <div id="home">
       <Header />
-      <main className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-8">
-        <Intro />
-        <Skills />
-        <Experience />
-        <Testimonials />
-      </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
