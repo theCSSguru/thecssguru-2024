@@ -1,16 +1,14 @@
 'use client';
+import { SectionScroll } from '../SectionScroll';
 import { Card } from '@/components/Card/Card';
-import { useSectionInView } from '@/hooks/useSectionInView';
 import Image from 'next/image';
 
 /*
  * About
  */
 export const About = () => {
-  const { ref } = useSectionInView('about');
-
   return (
-    <div id="about" ref={ref}>
+    <SectionScroll id="about">
       <Card className="bg-gradient-to-b from-brand-primary/20 p-6 sm:row-end-2 lg:col-span-2 xl:col-span-6">
         <div className="flex h-full flex-col justify-between gap-4 xl:grid xl:grid-cols-[1fr_auto_auto_1fr] xl:items-center">
           <div className="mx-auto flex max-w-52 xl:col-start-2 xl:mr-6">
@@ -46,6 +44,6 @@ export const About = () => {
           </div>
         </div>
       </Card>
-    </div>
+    </SectionScroll>
   );
 };

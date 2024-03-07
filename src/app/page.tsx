@@ -1,8 +1,7 @@
 import React from 'react';
 import { Header } from '@/components/Layout/Header';
-import { Home } from '@/components/Layout/Sections/Home';
+import { Hero } from '@/components/Layout/Sections/Hero';
 import { About } from '@/components/Layout/Sections/About';
-import { Footer } from '@/components/Layout/Footer';
 
 /*
  * HomePage
@@ -11,7 +10,10 @@ export default function HomePage() {
   return (
     <React.Fragment>
       <Header />
-      <Home />
+      <Hero />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
@@ -74,7 +76,6 @@ export default function HomePage() {
       <br />
       <br />
       <About />
-      <Footer />
     </React.Fragment>
   );
 }

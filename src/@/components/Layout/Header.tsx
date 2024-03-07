@@ -5,8 +5,8 @@ import { Navigation } from './Navigation';
  */
 export const Header = () => {
   return (
-    <header className="fixed z-50 mx-auto flex w-full max-w-screen-2xl items-center justify-between py-7">
-      <div className="text-lg font-bold md:text-3xl">
+    <header className="fixed inset-x-8 z-50 mx-auto flex max-w-screen-xl items-center justify-between py-7">
+      <div className="logo relative text-3xl font-bold">
         <a href="#home">
           <span className="mr-2 text-brand-primary">{`{`}</span>
           <span>the</span>
@@ -15,9 +15,7 @@ export const Header = () => {
           <span className="ml-2 text-brand-primary">{`}`}</span>
         </a>
       </div>
-      <div className="flex gap-1 md:gap-2">
-        <Navigation />
-      </div>
+      <Navigation />
     </header>
   );
 };
