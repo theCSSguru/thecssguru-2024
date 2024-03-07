@@ -7,7 +7,7 @@ import Image from 'next/image';
 export const Hero = () => {
   return (
     <SectionScroll id="home">
-      <div className="relative flex w-full pt-8 lg:pt-0">
+      <div className="relative mb-24 flex w-full pt-8 lg:mb-0 lg:pt-0">
         <div className="relative z-10 mx-auto flex max-w-[90%] items-center lg:m-0 lg:max-w-full">
           <div className="text-shadow flex flex-col gap-2">
             <div className="flex gap-2 pl-1 text-sm font-medium uppercase lg:text-lg">
@@ -26,7 +26,7 @@ export const Hero = () => {
               <div className="flex flex-col gap-8 lg:gap-12">
                 <div className="font-bold">Designer</div>
                 <div className="text-base font-extralight leading-6 lg:text-balance lg:text-2xl lg:leading-8">
-                  Fifteen years of passionate professional experience.
+                  Passion for creating beautiful user experiences.
                 </div>
                 <div className="flex flex-col gap-4 lg:flex-row">
                   <Button variant="secondary">view resume</Button>

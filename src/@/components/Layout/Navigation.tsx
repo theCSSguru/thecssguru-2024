@@ -48,9 +48,12 @@ export const Navigation = () => {
                 <div className="relative px-6 py-4">
                   <Link
                     href={`#${link}`}
-                    className={cn('text-white/50 hover:text-white', {
-                      'text-white': activeSection === link,
-                    })}
+                    className={cn(
+                      'text-white/50 transition-all hover:text-white',
+                      {
+                        'text-white': activeSection === link,
+                      },
+                    )}
                     onClick={() => {
                       setActiveSection(link);
                       setTimeOfLastClick(Date.now());

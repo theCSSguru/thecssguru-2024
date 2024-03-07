@@ -2,6 +2,9 @@ import React from 'react';
 import { Header } from '@/components/Layout/Header';
 import { Hero } from '@/components/Layout/Sections/Hero';
 import { About } from '@/components/Layout/Sections/About';
+import { Projects } from '@/components/Layout/Sections/Projects';
+import { Experience } from '@/components/Layout/Sections/Experience';
+import { Contact } from '@/components/Layout/Sections/Contact';
 
 /*
  * HomePage
@@ -11,71 +14,10 @@ export default function HomePage() {
     <React.Fragment>
       <Header />
       <Hero />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <About />
+      <Projects />
+      <Experience />
+      <Contact />
     </React.Fragment>
   );
 }

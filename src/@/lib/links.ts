@@ -1,7 +1,7 @@
 export const links = [
   'home',
   'about',
-  'portfolio',
+  'projects',
   'experience',
   'contact',
 ] as const;

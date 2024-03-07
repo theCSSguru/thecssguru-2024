@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Space = () => {
   return (
     <div className="space fixed inset-0">
