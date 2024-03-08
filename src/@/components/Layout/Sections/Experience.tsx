@@ -1,52 +1,56 @@
 'use client';
-import { SectionScroll } from '../SectionScroll';
-import { experience } from '@/lib/experience';
-import { FaComputer } from 'react-icons/fa6';
+import { SectionScroll } from '@/components/Layout/SectionScroll';
 import { Card } from '@/components/Card/Card';
+import { experience } from '@/lib/experience';
+import { cn } from '@/lib/utilities';
 
 /*
  * Experience
  */
 export const Experience = () => {
+  const xs = 'col-start-1 col-end-13 row-auto rounded-2xl p-10';
   return (
     <SectionScroll id="experience">
-      <Card
-        tilt={false}
-        className="bg-gradient-to-b from-white/20 p-6 pt-4 sm:row-start-1 sm:row-end-3 lg:row-end-4 xl:col-span-2"
-      >
-        <h2 className="mb-2 flex items-center gap-3 text-2xl font-bold tracking-wide drop-shadow-lg">
-          <FaComputer />
+      <div className="flex flex-col gap-8">
+        <h3 className="text-shadow text-center text-4xl font-bold">
           Experience
-        </h2>
-        <div className="flex flex-col gap-2">
+        </h3>
+        <div className="grid auto-rows-auto grid-cols-12 gap-6 text-center">
           {experience.map((item) => (
-            <div
-              key={item.duration}
-              className="rounded-md border border-transparent bg-white/5 p-4 shadow-lg transition-all duration-300 hover:border-brand-primary/30"
+            <Card
+              key={item.id}
+              className={cn(xs, {
+                'lg:col-end-8': item.id === 1 || item.id === 7,
+                'lg:col-start-8 lg:col-end-13': item.id === 2 || item.id === 8,
+                'lg:col-end-9': item.id === 3,
+                'lg:col-start-9 lg:col-end-13': item.id === 4,
+                'lg:col-end-7': item.id === 5,
+                'lg:col-start-7 lg:col-end-13': item.id === 6,
+              })}
             >
-              <div className="mb-2 text-lg font-extralight leading-none tracking-wide">
-                {item.position}
-              </div>
-              <div className="flex flex-col gap-1 text-xs">
-                <div className="flex flex-wrap gap-1">
-                  <div className="rounded-full bg-brand-primary/30 px-2 py-0.5">
+              <div className="flex h-full flex-col items-center justify-center gap-4">
+                <h4 className="text-shadow text-balance text-3xl font-bold">
+                  {item.position}
+                </h4>
+                <h5 className="text-shadow mb-1 text-3xl font-extralight">
+                  {item.duration}
+                </h5>
+                <div className="flex flex-wrap justify-center gap-3 text-sm font-extralight">
+                  <div className="flex items-center justify-center rounded-full bg-brand-primary/50 px-4 py-1">
                     {item.company}
                   </div>
-                  <div className="rounded-full bg-brand-secondary/50 px-2 py-0.5">
+                  <div className="flex items-center justify-center rounded-full bg-brand-secondary/50 px-4 py-1">
                     {item.location}
                   </div>
-                  <div className="rounded-full bg-black/10 px-2 py-0.5">
+                  <div className="flex items-center justify-center rounded-full bg-black/50 px-4 py-1">
                     {item.time}
-                  </div>
-                  <div className="rounded-full bg-white/10 px-2 py-0.5">
-                    {item.duration}
                   </div>
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
-      </Card>
+      </div>
     </SectionScroll>
   );
 };

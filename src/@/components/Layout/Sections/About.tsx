@@ -1,7 +1,7 @@
 'use client';
 import { Card } from '@/components/Card/Card';
 import { cn } from '@/lib/utilities';
-import { SectionScroll } from '../SectionScroll';
+import { SectionScroll } from '@/components/Layout/SectionScroll';
 import { skills } from '@/lib/skills';
 import { tools } from '@/lib/tools';
 import Image from 'next/image';

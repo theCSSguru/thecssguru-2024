@@ -29,6 +29,10 @@ export const Navigation = () => {
     }
   };
 
+  const handleCloseNavAfterLinkClick = () => {
+    setNavOpen(false);
+  };
+
   return (
     <React.Fragment>
       <div className="lg:hidden">
@@ -57,12 +61,13 @@ export const Navigation = () => {
                     onClick={() => {
                       setActiveSection(link);
                       setTimeOfLastClick(Date.now());
+                      handleCloseNavAfterLinkClick();
                     }}
                   >
                     {link}
                     {link === activeSection ? (
                       <motion.span
-                        className="absolute left-[-25%] top-[-25%] z-10 h-[150%] w-[150%] bg-brand-nav-highlight"
+                        className="bg-brand-nav-highlight absolute left-[-25%] top-[-25%] z-10 h-[150%] w-[150%]"
                         layoutId="activeSection"
                         transition={{
                           type: 'spring',

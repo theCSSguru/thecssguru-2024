@@ -5,6 +5,7 @@ import { About } from '@/components/Layout/Sections/About';
 import { Projects } from '@/components/Layout/Sections/Projects';
 import { Experience } from '@/components/Layout/Sections/Experience';
 import { Contact } from '@/components/Layout/Sections/Contact';
+import { Footer } from '@/components/Layout/Footer';
 
 /*
  * HomePage
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Projects />
       <Experience />
       <Contact />
+      <Footer />
     </React.Fragment>
   );
 }

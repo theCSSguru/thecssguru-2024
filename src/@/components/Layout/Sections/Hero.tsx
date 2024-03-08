@@ -1,7 +1,7 @@
 'use client';
 import { Button } from '@/components/Button/Button';
 import { Social } from '@/components/Social/Social';
-import { SectionScroll } from '../SectionScroll';
+import { SectionScroll } from '@/components/Layout/SectionScroll';
 import Image from 'next/image';
 
 export const Hero = () => {
