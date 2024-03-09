@@ -19,4 +19,5 @@ export const skills = [
   'PHP',
   'jQuery',
   'Coldfusion',
+  'Nativescript',
 ];

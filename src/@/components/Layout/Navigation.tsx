@@ -17,7 +17,7 @@ export const Navigation = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const mobile =
-    'hidden fixed top-24 left-8 right-8 rounded-2xl overflow-hidden border border-brand-secondary/25 bg-brand-secondary/15 backdrop-blur [&>ul]:flex-col [&>ul]:text-center [&>ul>li>div>a]:text-2xl';
+    'hidden fixed top-24 left-8 right-8 rounded-2xl overflow-hidden border border-brand-secondary/20 bg-brand-secondary/15 backdrop-blur [&>ul]:flex-col [&>ul]:text-center [&>ul>li>div>a]:text-2xl';
   const desktop =
     'lg:flex lg:relative lg:top-0 lg:left-auto lg:right-auto lg:rounded-full lg:px-4 lg:backdrop-blur-sm lg:[&>ul]:flex-row lg:[&>ul>li>div>a]:text-xl';
 

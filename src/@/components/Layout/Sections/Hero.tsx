@@ -29,8 +29,16 @@ export const Hero = () => {
                   Passion for creating beautiful user experiences.
                 </div>
                 <div className="flex flex-col gap-4 lg:flex-row">
-                  <Button variant="secondary">view resume</Button>
-                  <Button variant="primary">contact me</Button>
+                  <Button
+                    variant="secondary"
+                    href="/ChrisJohnsonResume.pdf"
+                    newTab
+                  >
+                    view resume
+                  </Button>
+                  <Button variant="primary" href="#contact">
+                    contact me
+                  </Button>
                 </div>
                 <div className="flex gap-3">
                   <Social />

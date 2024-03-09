@@ -108,6 +108,10 @@
   );
 }
 
+nav {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.15) inset;
+}
+
 .brand-lines {
   --animation-time: 1;
   animation: flicker var(--animation-time) ease alternate infinite;
@@ -162,6 +166,7 @@
     rgba(255, 0, 254, 0.1) 100%
   );
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.25) inset;
+  text-shadow: none;
 }
 
 .btn-primary:hover {
@@ -176,6 +181,7 @@
     rgba(188, 255, 255, 0.1) 100%
   );
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.25) inset;
+  text-shadow: none;
 }
 
 .btn-secondary:hover {

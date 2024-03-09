@@ -8,13 +8,10 @@ import { cn } from '@/lib/utilities';
  * Experience
  */
 export const Experience = () => {
-  const xs = 'col-start-1 col-end-13 row-auto rounded-2xl p-10';
+  const xs = 'col-start-1 col-end-13 row-auto';
   return (
     <SectionScroll id="experience">
       <div className="flex flex-col gap-8">
-        <h3 className="text-shadow text-center text-4xl font-bold">
-          Experience
-        </h3>
         <div className="grid auto-rows-auto grid-cols-12 gap-6 text-center">
           {experience.map((item) => (
             <Card
@@ -28,16 +25,16 @@ export const Experience = () => {
                 'lg:col-start-7 lg:col-end-13': item.id === 6,
               })}
             >
-              <div className="flex h-full flex-col items-center justify-center gap-4">
+              <div className="flex h-full flex-col items-center justify-center gap-2">
                 <h4 className="text-shadow text-balance text-3xl font-bold">
                   {item.position}
                 </h4>
-                <h5 className="text-shadow mb-1 text-3xl font-extralight">
-                  {item.duration}
+                <h5 className="text-shadow mb-3 text-2xl font-extralight">
+                  {item.company}
                 </h5>
                 <div className="flex flex-wrap justify-center gap-3 text-sm font-extralight">
                   <div className="flex items-center justify-center rounded-full bg-brand-primary/50 px-4 py-1">
-                    {item.company}
+                    {item.duration}
                   </div>
                   <div className="flex items-center justify-center rounded-full bg-brand-secondary/50 px-4 py-1">
                     {item.location}

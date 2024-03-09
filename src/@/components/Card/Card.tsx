@@ -1,6 +1,7 @@
 'use client';
 import { cn } from '@/lib/utilities';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import Image from 'next/image';
 
 /*
  * Card
@@ -10,9 +11,13 @@ export const Card = ({
   className,
   tilt = true,
   tiltSoft,
+  stats,
+  statsSub,
+  image,
+  imageAlt,
 }: CardProps) => {
   const cardDefaultStyles =
-    'rounded-md border border-white/20 border-b-white/10 border-r-white/10 bg-white/10 px-6 py-4 shadow-2xl';
+    'rounded-2xl p-10 border border-white/20 border-b-white/10 border-r-white/10 bg-white/10 shadow-2xl';
 
   const tiltDeg = tiltSoft ? '5deg' : '10deg';
   const tiltDegNeg = tiltSoft ? '-5deg' : '-10deg';
@@ -54,6 +59,31 @@ export const Card = ({
       y.set(0);
     };
 
+    const renderContent = () => {
+      if (stats) {
+        return (
+          <div className="flex h-full w-full flex-col items-center justify-center gap-2 py-4">
+            <h3 className="text-shadow text-7xl font-bold">{stats}</h3>
+            <h4 className="text-shadow text-2xl font-extralight">{statsSub}</h4>
+          </div>
+        );
+      }
+      if (image) {
+        return (
+          <div className="h-full w-full overflow-hidden rounded-xl">
+            <Image
+              src={image}
+              width={720}
+              height={960}
+              alt={imageAlt ?? ''}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        );
+      }
+      return children;
+    };
+
     return (
       <motion.div
         onMouseMove={(e) => handleMouseMove(e)}
@@ -72,7 +102,7 @@ export const Card = ({
           }}
           className="h-full"
         >
-          {children}
+          {renderContent()}
         </div>
       </motion.div>
     );
@@ -81,8 +111,12 @@ export const Card = ({
 };
 
 type CardProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   tilt?: boolean;
   tiltSoft?: boolean;
+  stats?: string;
+  statsSub?: string;
+  image?: string;
+  imageAlt?: string;
 };

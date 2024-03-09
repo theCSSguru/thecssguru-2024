@@ -8,6 +8,9 @@ export const Button = ({
   className,
   children,
   onClick,
+  newTab,
+  type,
+  disabled,
 }: ButtonProps) => {
   const defaultStyles =
     'text-base whitespace-nowrap lg:text-lg py-4 px-10 rounded-full border border-white/25 lowercase drop-shadow-md border-b-0 transition-all';
@@ -20,7 +23,11 @@ export const Button = ({
   }
   if (href) {
     return (
-      <Link className={cn(defaultStyles, variantStyles, className)} href={href}>
+      <Link
+        className={cn(defaultStyles, variantStyles, className)}
+        href={href}
+        target={newTab ? '_blank' : '_self'}
+      >
         {children}
       </Link>
     );
@@ -29,6 +36,8 @@ export const Button = ({
     <button
       className={cn(defaultStyles, variantStyles, className)}
       onClick={onClick}
+      type={type}
+      disabled={disabled}
     >
       {children}
     </button>
@@ -41,4 +50,7 @@ type ButtonProps = {
   children: React.ReactNode;
   className?: string;
   onClick?: () => void;
+  newTab?: boolean;
+  type: 'button' | 'submit' | 'reset' | undefined;
+  disabled?: boolean;
 };

@@ -6,7 +6,7 @@ export const SectionScroll = ({ id, children }: SectionScrollProps) => {
   const { ref } = useSectionInView(id);
 
   return (
-    <section id={id} ref={ref} className="scroll-mt-0 pt-28">
+    <section id={id} ref={ref} className="scroll-mt-0 py-28">
       {children}
     </section>
   );
