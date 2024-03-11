@@ -93,7 +93,7 @@ const ContactForm = () => {
 export const Contact = () => {
   return (
     <SectionScroll id="contact">
-      <div className="flex flex-col gap-8">
+      <div className="-mb-32 flex flex-col gap-8 lg:mb-0">
         <h3 className="text-shadow text-center text-4xl font-bold">Contact</h3>
         <Card className="rounded-2xl" tilt={false}>
           <ContactForm />

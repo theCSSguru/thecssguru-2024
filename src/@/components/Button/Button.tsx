@@ -13,7 +13,7 @@ export const Button = ({
   disabled,
 }: ButtonProps) => {
   const defaultStyles =
-    'text-base whitespace-nowrap lg:text-lg py-4 px-10 rounded-full border border-white/25 lowercase drop-shadow-md border-b-0 transition-all';
+    'flex justify-center text-base whitespace-nowrap lg:text-lg py-4 px-10 rounded-full border border-white/25 lowercase drop-shadow-md border-b-0 transition-all';
   let variantStyles;
   if (variant === 'primary') {
     variantStyles = 'btn-primary';

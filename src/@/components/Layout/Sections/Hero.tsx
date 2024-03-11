@@ -7,7 +7,7 @@ import Image from 'next/image';
 export const Hero = () => {
   return (
     <SectionScroll id="home">
-      <div className="relative mb-24 flex w-full pt-8 lg:mb-0 lg:pt-0">
+      <div className="relative mb-48 flex w-full pt-48 lg:mb-0 lg:pt-24">
         <div className="relative z-10 mx-auto flex max-w-[90%] items-center lg:m-0 lg:max-w-full">
           <div className="text-shadow flex flex-col gap-2">
             <div className="flex gap-2 pl-1 text-sm font-medium uppercase lg:text-lg">
@@ -25,9 +25,9 @@ export const Hero = () => {
               </div>
               <div className="flex flex-col gap-8 lg:gap-12">
                 <div className="font-bold">Designer</div>
-                <div className="text-base font-extralight leading-6 lg:text-balance lg:text-2xl lg:leading-8">
+                <h1 className="text-base font-extralight leading-6 lg:text-balance lg:text-2xl lg:leading-8">
                   Passion for creating beautiful user experiences.
-                </div>
+                </h1>
                 <div className="flex flex-col gap-4 lg:flex-row">
                   <Button
                     variant="secondary"
@@ -47,13 +47,14 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-img-bg absolute -left-28 top-28 flex w-96 items-center justify-center pr-10 md:left-auto md:right-[50dvw] lg:relative lg:left-0 lg:top-0 lg:w-max">
+        <div className="hero-img-bg absolute -left-28 top-64 flex w-96 items-center justify-center pr-10 md:left-auto md:right-[50dvw] lg:relative lg:left-0 lg:top-0 lg:w-max">
           <Image
             src="/me.jpg"
             width={542}
             height={813}
             alt="Chris Johnson"
             className="relative -top-24 max-w-full mix-blend-lighten"
+            priority={true}
           />
         </div>
       </div>

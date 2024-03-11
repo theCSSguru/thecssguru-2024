@@ -17,7 +17,7 @@ export const Navigation = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const mobile =
-    'hidden fixed top-24 left-8 right-8 rounded-2xl overflow-hidden border border-brand-secondary/20 bg-brand-secondary/15 backdrop-blur [&>ul]:flex-col [&>ul]:text-center [&>ul>li>div>a]:text-2xl';
+    'hidden fixed top-24 left-8 right-8 rounded-2xl overflow-hidden border border-brand-secondary/20 bg-black/50 backdrop-blur [&>ul]:flex-col [&>ul]:text-center [&>ul>li>div>a]:text-2xl';
   const desktop =
     'lg:flex lg:relative lg:top-0 lg:left-auto lg:right-auto lg:rounded-full lg:px-4 lg:backdrop-blur-sm lg:[&>ul]:flex-row lg:[&>ul>li>div>a]:text-xl';
 
@@ -38,6 +38,7 @@ export const Navigation = () => {
       <div className="lg:hidden">
         <Button variant="primary" className="px-4" onClick={handleOnClick}>
           {navOpen ? <FaXmark size={24} /> : <FaBars size={24} />}
+          <span className="sr-only">Navigation Menu</span>
         </Button>
       </div>
       <nav
@@ -49,11 +50,11 @@ export const Navigation = () => {
           {links.map((link) => {
             return (
               <li key={link}>
-                <div className="relative px-6 py-4">
+                <div className="relative">
                   <Link
                     href={`#${link}`}
                     className={cn(
-                      'text-white/50 transition-all hover:text-white',
+                      'flex justify-center px-6 py-4 text-white/50 transition-all hover:text-white',
                       {
                         'text-white': activeSection === link,
                       },
