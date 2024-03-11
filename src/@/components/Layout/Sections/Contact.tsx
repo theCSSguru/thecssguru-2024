@@ -79,7 +79,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="flex justify-center p-5">
-        <Button variant="secondary" type="submit" disabled={state.submitting}>
+        <Button variant="primary" type="submit" disabled={state.submitting}>
           Submit
         </Button>
       </div>
@@ -93,7 +93,7 @@ const ContactForm = () => {
 export const Contact = () => {
   return (
     <SectionScroll id="contact">
-      <div className="mx-auto flex max-w-3xl flex-col gap-8">
+      <div className="flex flex-col gap-8">
         <h3 className="text-shadow text-center text-4xl font-bold">Contact</h3>
         <Card className="rounded-2xl" tilt={false}>
           <ContactForm />

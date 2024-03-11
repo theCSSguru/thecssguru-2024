@@ -51,6 +51,6 @@ type ButtonProps = {
   className?: string;
   onClick?: () => void;
   newTab?: boolean;
-  type: 'button' | 'submit' | 'reset' | undefined;
+  type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
 };
