@@ -77,6 +77,7 @@ export const Card = ({
               height={960}
               alt={imageAlt ?? ''}
               className="h-full w-full object-cover"
+              unoptimized
             />
           </div>
         );

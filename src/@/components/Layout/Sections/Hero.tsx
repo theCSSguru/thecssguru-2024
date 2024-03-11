@@ -54,7 +54,8 @@ export const Hero = () => {
             height={813}
             alt="Chris Johnson"
             className="relative -top-24 max-w-full mix-blend-lighten"
-            priority={true}
+            priority
+            unoptimized
           />
         </div>
       </div>
