@@ -7,6 +7,8 @@ import { Experience } from '@/components/Layout/Sections/Experience';
 import { Contact } from '@/components/Layout/Sections/Contact';
 import { Footer } from '@/components/Layout/Footer';
 
+export const dynamic = 'error'; // or 'force-static'
+
 /*
  * HomePage
  */
