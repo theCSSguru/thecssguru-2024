@@ -1,6 +1,14 @@
 export const experience = [
   {
     id: 1,
+    position: 'UI Developer',
+    company: `Carter's`,
+    location: 'Remote',
+    time: 'Full Time',
+    duration: '2024 - Current',
+  },
+  {
+    id: 2,
     position: 'Senior Software Engineer II',
     company: 'Humana',
     location: 'Remote',
@@ -8,7 +16,7 @@ export const experience = [
     duration: '2022 - 2024',
   },
   {
-    id: 2,
+    id: 3,
     position: 'Senior Software Engineer II',
     company: 'Author by Humana',
     location: 'Remote',
@@ -16,7 +24,7 @@ export const experience = [
     duration: '2021 - 2022',
   },
   {
-    id: 3,
+    id: 4,
     position: 'Lead Front End Developer',
     company: 'InterCoastal Net Designs',
     location: 'Remote',
@@ -24,7 +32,7 @@ export const experience = [
     duration: '2017 - 2021',
   },
   {
-    id: 4,
+    id: 5,
     position: 'UX Developer',
     company: 'Navient',
     location: 'Fishers, IN',
@@ -32,7 +40,7 @@ export const experience = [
     duration: '2017 - 2017',
   },
   {
-    id: 5,
+    id: 6,
     position: 'Front End Developer',
     company: 'InterCoastal Net Designs',
     location: 'Remote',
@@ -40,7 +48,7 @@ export const experience = [
     duration: '2015 - 2017',
   },
   {
-    id: 6,
+    id: 7,
     position: 'Web Developer',
     company: 'Orbis Education',
     location: 'Indianapolis, IN',
@@ -48,7 +56,7 @@ export const experience = [
     duration: '2014 - 2015',
   },
   {
-    id: 7,
+    id: 8,
     position: 'Front End Developer',
     company: 'InterCoastal Net Designs',
     location: 'Remote',
@@ -56,7 +64,7 @@ export const experience = [
     duration: '2008 - 2014',
   },
   {
-    id: 8,
+    id: 9,
     position: 'Creative Director',
     company: 'Marian Records',
     location: 'Nashville, TN',
