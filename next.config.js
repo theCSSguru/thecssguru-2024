@@ -3,7 +3,6 @@ await import('./src/server/env.js');
 
 /** @type {import("next").NextConfig} */
 const config = {
-  distDir: 'build',
   output: 'export',
   images: { unoptimized: true },
   trailingSlash: true,
