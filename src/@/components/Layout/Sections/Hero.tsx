@@ -62,7 +62,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-img-bg order-1 -mb-32 w-[100dvw] lg:relative lg:top-0 lg:order-2 lg:m-0 lg:w-max">
+        <div className="hero-img-bg relative -z-10 order-1 -mb-32 w-[100dvw] lg:relative lg:top-0 lg:order-2 lg:m-0 lg:w-max">
           <Image
             src="/me.jpg"
             width={542}

@@ -129,22 +129,22 @@ nav {
     opacity: 1;
   }
 }
-.space-bg,
-.brand-img-bg {
+.space-bg {
   position: absolute;
   inset: 0;
   contain: paint;
 }
-.space-bg {
+.space-bg::before {
   opacity: 0.75;
   z-index: 1;
 }
-.brand-img-bg {
+.space-bg::after {
   opacity: 0.5;
   z-index: 2;
+  mix-blend-mode: darken;
 }
 .space-bg::before,
-.brand-img-bg::before {
+.space-bg::after {
   position: absolute;
   left: 0;
   width: 200vw;
@@ -157,7 +157,7 @@ nav {
 .space-bg::before {
   animation: imgSlideBack 400s linear infinite alternate;
 }
-.brand-img-bg::before {
+.space-bg::after {
   animation: imgSlideBack 160s linear infinite alternate;
 }
 @keyframes imgSlideBack {

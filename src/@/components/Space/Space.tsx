@@ -1,8 +1,7 @@
 export const Space = () => {
   return (
     <div className="space-wrap fixed inset-0 z-0">
-      <div className="space-bg before:bg-[url('/bgspace.jpg')]"></div>
-      <div className="brand-img-bg mix-blend-darken before:bg-[url('/bg.jpg')]"></div>
+      <div className="space-bg before:bg-[url('/bgspace.jpg')] after:bg-[url('/bg.jpg')]"></div>
       <div className="bg-brand-radial absolute inset-0 z-20 bg-cover mix-blend-soft-light"></div>
       <div className="bg-brand-radial absolute inset-0 z-30 bg-cover opacity-50 mix-blend-overlay"></div>
       <div className="absolute inset-0 z-40">
