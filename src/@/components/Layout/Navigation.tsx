@@ -7,6 +7,7 @@ import { useActiveSectionContext } from '@/context/ActiveSectionContext';
 import { Button } from '../Button/Button';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import Link from 'next/link';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 /*
  * Navigation
@@ -48,15 +49,21 @@ export const Navigation = () => {
       >
         <ul className="flex w-full">
           {links.map((link) => {
+            const isContactLink = link === 'Contact';
             return (
               <li key={link}>
                 <div className="relative">
                   <Link
-                    href={`#${link}`}
+                    href={
+                      isContactLink
+                        ? 'https://linkedin.com/in/thecssguru'
+                        : `#${link}`
+                    }
                     className={cn(
-                      'flex justify-center px-6 py-4 text-white/50 transition-all hover:text-white',
+                      'text-shadow flex items-center justify-center gap-2 px-6 py-4 font-light tracking-tighter text-white/70 transition-all hover:text-white',
                       {
-                        'text-white': activeSection === link,
+                        'font-extrabold tracking-wide text-white':
+                          activeSection === link,
                       },
                     )}
                     onClick={() => {
@@ -64,8 +71,12 @@ export const Navigation = () => {
                       setTimeOfLastClick(Date.now());
                       handleCloseNavAfterLinkClick();
                     }}
+                    target={isContactLink ? '_blank' : undefined}
                   >
                     {link}
+                    {isContactLink ? (
+                      <FaExternalLinkAlt fontSize={14} />
+                    ) : undefined}
                     {link === activeSection ? (
                       <motion.span
                         className="bg-brand-nav-highlight absolute left-[-25%] top-[-25%] z-10 h-[150%] w-[150%]"

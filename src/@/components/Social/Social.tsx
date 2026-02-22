@@ -1,6 +1,6 @@
 import React from 'react';
 import { social } from '@/lib/social';
-import Link from 'next/link';
+import { Button } from '../Button/Button';
 
 /*
  * Social
@@ -9,15 +9,15 @@ export const Social = () => {
   return (
     <React.Fragment>
       {social.map((item) => (
-        <Link
+        <Button
           key={item.id}
           href={item.url}
-          target="_blank"
-          title={item.name}
-          className="text-brand-secondary opacity-70 drop-shadow-md transition-opacity hover:opacity-100"
+          newTab
+          variant="secondary"
+          className="p-4 opacity-25 hover:opacity-100"
         >
           {item.icon}
-        </Link>
+        </Button>
       ))}
     </React.Fragment>
   );

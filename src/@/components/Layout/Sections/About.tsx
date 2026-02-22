@@ -2,8 +2,8 @@
 import { Card } from '@/components/Card/Card';
 import { cn, yearsOfExperience } from '@/lib/utilities';
 import { SectionScroll } from '@/components/Layout/SectionScroll';
-import { skills } from '@/lib/skills';
-import { tools } from '@/lib/tools';
+import { Heading } from '@/components/Heading/Heading';
+import { techStack } from '@/lib/techStack';
 
 /*
  * About
@@ -11,28 +11,36 @@ import { tools } from '@/lib/tools';
 export const About = () => {
   const xs = 'col-start-1 col-end-13 row-auto';
   return (
-    <SectionScroll id="about">
+    <SectionScroll id="About">
+      <Heading>About</Heading>
       <div className="grid auto-rows-auto grid-cols-12 gap-6 text-center">
         <Card
           className={cn(xs, 'p-4 sm:col-end-7 lg:col-end-5 lg:row-span-2')}
           image="/me2.jpg"
-          imageAlt="Me and my fiance."
+          imageAlt="Me and my wife."
         />
         <Card
           className={cn(
             xs,
             'sm:col-start-7 lg:col-start-5 lg:col-end-9 lg:row-span-2',
           )}
-        >
-          <div className="flex h-full w-full flex-col items-center justify-center gap-8 py-4">
-            <h2 className="text-shadow text-7xl font-bold">About</h2>
-            <p className="text-balance text-lg font-extralight">
-              Chris Johnson is a seasoned Front End Developer, self taught and
-              known for his collaborative approach and dedication to crafting
-              impactful user experiences for a diverse range of clients.
-            </p>
-          </div>
-        </Card>
+          stats="Chris Johnson"
+          statsSub={
+            <span>
+              A seasoned{' '}
+              <span className="font-medium text-brand-primary">
+                UI Developer
+              </span>{' '}
+              specializing in{' '}
+              <span className="font-medium text-brand-secondary">
+                Design Systems
+              </span>
+              , self-taught and known for a collaborative approach and a
+              dedication to crafting impactful user experiences for a diverse
+              range of clients.
+            </span>
+          }
+        />
         <Card
           className={cn(
             xs,
@@ -47,59 +55,40 @@ export const About = () => {
             'sm:col-start-7 lg:col-start-9 lg:col-end-13 lg:row-span-1',
           )}
           stats="1000+"
-          statsSub="Clients sites worked on"
+          statsSub="Sites built & delivered for clients"
         />
         <Card
-          className={cn(
-            xs,
-            'sm:col-end-7 lg:col-end-5 lg:row-span-1 lg:row-start-3',
-          )}
+          className={cn(xs, 'sm:col-end-7')}
           stats="Graphic Design"
-          statsSub="Associates Degree"
+          statsSub="Associate Degree"
         />
         <Card
-          className={cn(
-            xs,
-            'sm:col-start-7 lg:col-start-1 lg:col-end-5 lg:row-span-1 lg:row-start-4',
-          )}
-          stats="AA"
-          statsSub="Accessability compliance"
+          className={cn(xs, 'sm:col-start-7')}
+          stats="WCAG AA"
+          statsSub="Accessibility compliance"
         />
-        <Card
-          className={cn(
-            xs,
-            'col-end-13 sm:col-end-7 lg:col-start-5 lg:col-end-9 lg:row-span-2 lg:row-start-3',
-          )}
-        >
-          <div className="flex h-full w-full flex-col items-center justify-center gap-8 py-4">
-            <h3 className="text-shadow text-7xl font-bold">Skills</h3>
-            <div className="flex flex-wrap justify-center gap-1">
-              {skills.map((item) => (
+        <Card className={cn(xs)}>
+          <div className="flex h-full w-full flex-col items-center gap-8 py-4">
+            <h3 className="text-shadow text-5xl font-bold">Tech Stack</h3>
+            <div className="grid w-full gap-6 sm:grid-cols-2">
+              {techStack.map((group) => (
                 <div
-                  key={item}
-                  className="rounded-full bg-brand-secondary/25 px-2 py-0.5"
+                  key={group.title}
+                  className="flex flex-col gap-2 text-left"
                 >
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </Card>
-        <Card
-          className={cn(
-            xs,
-            'col-end-13 sm:col-start-7 lg:col-start-9 lg:col-end-13 lg:row-span-2 lg:row-start-3',
-          )}
-        >
-          <div className="flex h-full w-full flex-col items-center justify-center gap-8 py-4">
-            <h3 className="text-shadow text-7xl font-bold">Tools</h3>
-            <div className="flex flex-wrap justify-center gap-1">
-              {tools.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-full bg-brand-secondary/25 px-2 py-0.5"
-                >
-                  {item}
+                  <Heading className="mb-0 [&>div>hr]:border [&>div]:opacity-25 [&>h2]:text-2xl">
+                    {group.title}
+                  </Heading>
+                  <div className="flex flex-wrap gap-1">
+                    {group.items.map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full bg-brand-primary/50 px-2 py-0.5 text-sm font-extralight"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>

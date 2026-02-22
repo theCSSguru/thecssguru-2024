@@ -62,9 +62,11 @@ export const Card = ({
     const renderContent = () => {
       if (stats) {
         return (
-          <div className="flex h-full w-full flex-col items-center justify-center gap-2 py-4">
-            <h3 className="text-shadow text-7xl font-bold">{stats}</h3>
-            <h4 className="text-shadow text-2xl font-extralight">{statsSub}</h4>
+          <div className="flex h-full w-full flex-col items-center justify-center gap-6 py-4">
+            <h3 className="text-shadow text-5xl font-bold">{stats}</h3>
+            <h4 className="text-shadow text-xl font-extralight lg:text-2xl">
+              {statsSub}
+            </h4>
           </div>
         );
       }
@@ -77,6 +79,7 @@ export const Card = ({
               height={960}
               alt={imageAlt ?? ''}
               className="h-full w-full object-cover"
+              loading="lazy"
               unoptimized
             />
           </div>
@@ -117,7 +120,7 @@ type CardProps = {
   tilt?: boolean;
   tiltSoft?: boolean;
   stats?: string;
-  statsSub?: string;
+  statsSub?: React.ReactNode;
   image?: string;
   imageAlt?: string;
 };

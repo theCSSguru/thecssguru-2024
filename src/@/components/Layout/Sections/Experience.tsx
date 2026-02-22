@@ -3,6 +3,7 @@ import { SectionScroll } from '@/components/Layout/SectionScroll';
 import { Card } from '@/components/Card/Card';
 import { experience } from '@/lib/experience';
 import { cn } from '@/lib/utilities';
+import { Heading } from '@/components/Heading/Heading';
 
 /*
  * Experience
@@ -10,7 +11,8 @@ import { cn } from '@/lib/utilities';
 export const Experience = () => {
   const xs = 'col-start-1 col-end-13 row-auto';
   return (
-    <SectionScroll id="experience">
+    <SectionScroll id="Experience">
+      <Heading>Experience</Heading>
       <div className="flex flex-col gap-8">
         <div className="grid auto-rows-auto grid-cols-12 gap-6 text-center">
           {experience.map((item) => (
@@ -29,7 +31,7 @@ export const Experience = () => {
                 <h4 className="text-shadow text-balance text-3xl font-bold">
                   {item.position}
                 </h4>
-                <h5 className="text-shadow mb-3 text-2xl font-extralight">
+                <h5 className="text-shadow mb-3 text-2xl font-extralight text-brand-secondary">
                   {item.company}
                 </h5>
                 <div className="flex flex-wrap justify-center gap-3 text-sm font-extralight">

@@ -12,8 +12,8 @@ const inter = Inter({
 
 // Meta Data
 export const metadata = {
-  title: 'theCSSguru | Frontend UX/UI Developer & Designer',
-  description: 'theCSSguru | Frontend UX/UI Developer & Designer',
+  title: 'theCSSguru | Frontend UI Developer, Design Systems',
+  description: 'theCSSguru | Frontend UI Developer, Design Systems',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 
@@ -27,13 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={cn('scroll-smooth text-white', inter.variable)}>
-      <body className="bg-black px-8">
+      <body className="bg-black">
         <Space />
-        <div className="relative mx-auto w-full max-w-screen-xl">
-          <ActiveSectionContextProvider>
+        <ActiveSectionContextProvider>
+          <div className="relative z-20 mx-auto w-full max-w-screen-xl">
             {children}
-          </ActiveSectionContextProvider>
-        </div>
+          </div>
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
