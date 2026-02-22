@@ -22,11 +22,23 @@ export const Button = ({
     variantStyles = 'btn-secondary';
   }
   if (href) {
+    if (href && newTab) {
+      return (
+        <a
+          href={href}
+          className={cn(defaultStyles, variantStyles, className)}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      );
+    }
     return (
       <Link
         className={cn(defaultStyles, variantStyles, className)}
         href={href}
-        target={newTab ? '_blank' : '_self'}
+        prefetch={false}
       >
         {children}
       </Link>
