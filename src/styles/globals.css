@@ -139,9 +139,8 @@ nav {
   z-index: 1;
 }
 .space-bg::after {
-  opacity: 0.5;
+  opacity: 0.25;
   z-index: 2;
-  mix-blend-mode: darken;
 }
 .space-bg::before,
 .space-bg::after {
